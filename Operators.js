@@ -25,30 +25,24 @@ console.log(number1/number2)
 console.log(number1%number2)
 console.log(number1**number2)
 
+//comparison operators
 
-function reverseString(str){
-    return str.split('').reverse().join('')
-}
+let age=25
+console.log(age==25)
+console.log(age<20)
+console.log(age>20)
+console.log(age!=20)
+console.log(age===20)
 
-console.log(reverseString("madam"))
+//logical operator
+
+let number=100;
+console.log(number>50 && number%10==0);
+console.log(number<1 || number%10==0);
 
 
-function fibonocci(n){
-    let a=0,b=1;
-    for(let i=0;i<n;i++){
-        console.log(a);
-        let next=a+b;
-        a=b;
-        b=next;
-    }
-}
 
-fibonocci(5)
 
-function ispalindrome(str){
-    let reversed=str.split('').reverse('').join('');
-    return str === reversed;
-}
 
-console.log(ispalindrome("madam"));
-console.log(ispalindrome("hello"));
+
+
