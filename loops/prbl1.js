@@ -1,4 +1,4 @@
-/*
+
 let i;
 let j;
 let row;
@@ -15,9 +15,7 @@ for(i=1;i<=n;i++){
     }
 console.log(row);
 }
-*/
-
-
+/*
 let i;
 let j;
 let row;
@@ -31,3 +29,7 @@ for(i=0;i<n;i++){
     }
     console.log(row)   
 }
+
+let arr1=[[1,2],[1,2]]
+console.log(arr1.toString())
+*/

@@ -1,0 +1,33 @@
+let promise=new Promise((resolve,reject)=>{
+    console.log("hi i will execute")
+    resolve("i could have return sucess")
+})
+
+//promises are tools that used to handle the async operation and provides structure world that are may or may not imediately avail.
+// promise is an eventual completion of task.it is an object.it is solution to callback hell. 
+
+
+function getdata(dataId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("data",dataId)
+            resolve('sucess')
+        }, 4000);
+        
+    });
+}
+//async-await
+
+async function getalldata() {
+    await getdata(1);
+    await getdata(2);
+    await getdata(3);
+    await getdata(5);
+
+    
+}
+
+getalldata()
+
+//async func always returns promise
+// await pauses the execution of its surronding untill the promise is settled
